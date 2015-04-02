@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 from __future__ import unicode_literals
 # -*- coding: utf-8 -*-
-from django.utils.importlib import import_module
+from importlib import import_module
 
 
 def get_class_from_str(class_path):

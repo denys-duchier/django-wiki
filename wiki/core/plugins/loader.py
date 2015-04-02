@@ -9,7 +9,7 @@ from __future__ import print_function
 from __future__ import absolute_import
 from __future__ import unicode_literals
 from django.conf import settings
-from django.utils.importlib import import_module
+from importlib import import_module
 
 
 def get_module(app, modname, verbose, failfast):
