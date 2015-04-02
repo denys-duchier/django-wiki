@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from __future__ import absolute_import
 from django import forms
-from django.forms.util import flatatt
+from django.forms.utils import flatatt
 try:
     from django.utils.encoding import force_unicode
 except ImportError:
