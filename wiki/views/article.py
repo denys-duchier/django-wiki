@@ -684,6 +684,7 @@ class Settings(ArticleMixin, TemplateView):
 
 
 class ChangeRevisionView(RedirectView):
+    permanent = True
 
     @method_decorator(get_article(can_write=True, not_locked=True))
     def dispatch(self, request, article, *args, **kwargs):
