@@ -10,6 +10,7 @@ from django.db.models.signals import post_save, pre_delete
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
+from django.core.exceptions import ObjectDoesNotExist
 
 from wiki.conf import settings
 from wiki.core import permissions
@@ -200,8 +201,12 @@ class Article(models.Model):
                                           preview=preview_content is not None))
 
     def get_cache_key(self):
-        return "wiki:article:%d" % (
-            self.current_revision.id if self.current_revision else self.id)
+        try:
+            r = self.current_revision
+            ID = r.id if r else self.id
+        except ObjectDoesNotExist:
+            ID = self.id
+        return "wiki:article:%d" % ID
 
     def get_cached_content(self):
         """Returns cached """
