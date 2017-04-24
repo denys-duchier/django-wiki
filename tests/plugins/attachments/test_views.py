@@ -3,7 +3,7 @@ from __future__ import print_function, unicode_literals
 from io import BytesIO
 
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from django.core.urlresolvers import reverse
+from wiki.core.urlresolvers import reverse
 
 from ...base import ArticleWebTestBase
 

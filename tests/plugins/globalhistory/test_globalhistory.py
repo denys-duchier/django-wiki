@@ -2,7 +2,7 @@ from __future__ import print_function, unicode_literals
 
 import sys
 
-from django.core.urlresolvers import reverse
+from wiki.core.urlresolvers import reverse
 from wiki.models import URLPath
 from ...base import ArticleWebTestBase
 

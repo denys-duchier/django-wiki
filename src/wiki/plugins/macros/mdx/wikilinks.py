@@ -7,7 +7,7 @@ from __future__ import absolute_import, unicode_literals
 import re
 
 import markdown
-from django.core.urlresolvers import reverse
+from wiki.core.urlresolvers import reverse
 from markdown.extensions import wikilinks
 
 

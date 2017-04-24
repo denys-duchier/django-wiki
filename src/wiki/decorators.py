@@ -3,7 +3,7 @@ from __future__ import absolute_import, unicode_literals
 
 from functools import wraps
 
-from django.core.urlresolvers import reverse
+from wiki.core.urlresolvers import reverse
 from django.http import (HttpResponseForbidden, HttpResponseNotFound,
                          HttpResponseRedirect)
 from django.shortcuts import get_object_or_404, redirect

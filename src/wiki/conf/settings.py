@@ -4,7 +4,7 @@ import bleach
 
 from django.conf import settings as django_settings
 from django.core.files.storage import default_storage
-from django.core.urlresolvers import reverse_lazy
+from wiki.core.urlresolvers import reverse_lazy
 from django.utils.translation import ugettext_lazy as _
 
 #: Should urls be case sensitive?

@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 from wiki.conf import settings
-from django.core.urlresolvers import get_callable
+from wiki.core.urlresolvers import get_callable
 
 _EditorClass = None
 _editor = None

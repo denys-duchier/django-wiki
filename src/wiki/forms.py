@@ -10,7 +10,7 @@ from django import forms
 from django.apps import apps
 from django.contrib.auth.forms import UserCreationForm
 from django.core import validators
-from django.core.urlresolvers import Resolver404, resolve
+from wiki.core.urlresolvers import Resolver404, resolve
 from django.core.validators import RegexValidator
 from django.forms.widgets import HiddenInput
 from django.utils import timezone

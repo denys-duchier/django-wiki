@@ -1,6 +1,6 @@
 from __future__ import absolute_import, unicode_literals
 
-from django.core.urlresolvers import reverse
+from wiki.core.urlresolvers import reverse
 from django.template import Context, Template
 from django.test import TestCase
 from django.test.client import Client

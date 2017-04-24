@@ -2,7 +2,7 @@ from __future__ import absolute_import, unicode_literals
 
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
-from django.core.urlresolvers import reverse_lazy
+from wiki.core.urlresolvers import reverse_lazy
 from django.utils.translation import ugettext as _
 from wiki.core.plugins import registry
 from wiki.core.plugins.base import BasePlugin

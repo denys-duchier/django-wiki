@@ -13,7 +13,10 @@ from __future__ import unicode_literals
 
 import os
 
-from django.core.urlresolvers import reverse_lazy
+try:
+    from django.urls import reverse_lazy
+except ImportError:
+    from django.core.urlresolvers import reverse_lazy
 
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

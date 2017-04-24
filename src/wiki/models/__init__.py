@@ -64,7 +64,7 @@ if 'django_notify' in django_settings.INSTALLED_APPS:
         'django-wiki: You need to change from django_notify to django_nyt in INSTALLED_APPS and your urlconfig.')
 
 
-from django.core import urlresolvers  # noqa
+from wiki.core import urlresolvers  # noqa
 
 original_django_reverse = urlresolvers.reverse
 
